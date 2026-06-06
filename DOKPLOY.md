@@ -26,6 +26,18 @@ Do not expose PostgreSQL, Redis, Elasticsearch, or Temporal publicly.
 Add social-provider credentials in Dokploy environment variables. Do not commit
 credentials or a production `.env` file to Git.
 
+Meta integrations use these variables:
+
+```env
+FACEBOOK_APP_ID=
+FACEBOOK_APP_SECRET=
+INSTAGRAM_APP_ID=
+INSTAGRAM_APP_SECRET=
+```
+
+Facebook and Instagram Business use the Facebook app credentials. The separate
+Instagram credentials are used by the Instagram Standalone integration.
+
 ## Updating Postiz
 
 1. Check the Postiz release notes.
